@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        /*task 39 , 40*/
+        .btn {
+      padding: 12px;
+      font-size: 16px;
+     
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s ; /* smooth effect */
+    }
+
+    .btn:hover {
+      background-color: #106515;
+    }
+   .cards{
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+   }
+    .card {
+      background-color: white;
+      padding: 20px;
+      width: 200px;
+      height: 300px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: 0.3s ;
+       box-shadow: slategray;
+    }
+
+      .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    }
+
+    /*task 42*/
+    .scale-btn {
+      padding: 12px 25px;
+      font-size: 16px;
+      background-color: #2196F3;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .scale-btn:hover {
+      transform: scale(1.5);
+    }
+/* task 43*/
+     /* Task 43 Simple Keyframes Animation*/
+    .animate-box {
+      width: 100px;
+      height: 100px;
+      background-color: #FF5722;
+      margin-top: 30px;
+      animation: moveBox 2s infinite;
+    }
+
+    @keyframes moveBox {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(100px);
+      }
+    }
+
+    </style>
+</head>
+<body>
+     <h2>Task 39 & 40: Button Hover with Transition</h2>
+  <button class="btn">Hover Me</button>
+
+  <h2>Task 41: Card Hover Animation</h2>
+  <div class="cards">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+  </div>
+
+  <!--Task 42-->
+  <h2>Task 42: Button Scale Effect</h2>
+  <button class="scale-btn">Scale Button</button>
+<hr>
+
+   <h2>Task 43: Simple CSS Animation</h2>
+  <div class="animate-box"></div>
+</body>
+</html>

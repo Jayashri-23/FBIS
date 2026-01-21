@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Color Format</title>
+
+     <style>
+    
+        h1 {
+            color: navy;            
+        }
+         p.name {
+            color: purple;
+            background-color: lightyellow;
+        }
+
+
+        h2 {
+            color: #b30059;       
+        }
+         p.hex {
+            color: #0066cc;
+            background-color: #d3c0c9;
+        }
+
+
+        h3 {
+            color: rgb(0, 128, 128); 
+        }  
+
+        p.rgb {
+            color: rgb(120, 60, 200);
+            background-color: rgb(210, 235, 208);
+        }
+
+        /* Task 6 */
+        .text-para{
+           text-align: justify;
+           line-height: 3; 
+           letter-spacing: 0.6px;
+           font-family: Arial, Helvetica, sans-serif;
+          color: #b30059;
+           background-color: blanchedalmond;
+        }
+        /* Task 7 & 8*/
+        .box-1{
+            margin: 30px;
+            padding: 20px;
+            width: 500px;
+            color: rgb(104, 10, 10);
+            background-color: antiquewhite; /*Task 10*/
+            border: 2px solid;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+      .dashed-border{
+            width: 250px;
+            padding: 20px;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            border: 3px dashed #f44336;
+      }
+      .solid-border{
+            width: 250px;
+            padding: 20px;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            border: 3px solid #f44336;
+      }
+      /* Task 10 */
+      .background-img{
+        background-image: url(data:image/jpeg;base64,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);
+        height: 50px;
+    }
+    /* Task 11 */  
+      /* container style*/
+    .main-container{
+            background-color: gray;   /* gray background for content */ 
+            color: #333333;         /* Dark text for contrast */
+            text-align: center;     /* Center the heading */
+            margin: 20px;    /* Space below the heading */ 
+            border-radius: 5px;            /* Slightly rounded corners */
+            height: 150px;        /*provide proper height for container */
+    }
+
+     
+        .pixel-box {
+            width: 300px;       /* fixed width in pixels */
+            height: 50px;
+            background-color: #65ad67;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .percent-box {
+            width: 50%;       
+            height: 70px;
+            background-color: #5ca1da;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+
+        .em-box {
+            font-size: 1.5em;   /*  parent font size */ 
+            background-color: #ff9800;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .rem-box {
+            font-size: 1.5rem;  /* 1.5 × root font size */
+            background-color: #9c27b0;
+            color: white;
+        }
+          /*Task 13*/ 
+         .box1 {
+      width: 150px;   
+      height: 100px; 
+      background-color: lightblue;
+      margin: 10px;
+    }
+
+    .box2 {
+      width: 200px;   /* width of box 2 */
+      height: 150px;  /* height of box 2 */
+      background-color: lightgreen;
+      margin: 10px;
+    }
+    /*Task 14*/
+    .box {
+      width: 200px;           
+      padding: 20px;          
+      border: 5px solid red; 
+      margin: 30px;         
+      background-color: lightyellow;
+    }
+
+    /*Task 15*/
+    .block {
+      display: block;       /* takes full width, starts on new line */
+      background-color: lightblue;
+      padding: 10px;
+      margin: 5px 0;
+    }
+
+    .inline {
+      display: inline;      /* flows within line, only takes necessary width */
+      background-color: lightgreen;
+      padding: 5px;
+      margin: 0 5px;
+    }
+
+    /*Task 16*/
+     .inline-block-box {
+      display: inline-block;      /* allows divs to sit side by side */
+      width: 120px;
+      height: 80px;
+      background-color: lightcoral;
+      margin: 5px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+     }
+
+    .relative-box {
+      position: relative;
+      top: 10px; /* moves down 10px from normal position */  
+      width: 150px;
+      height: 100px;
+      background-color: lightblue;
+      border: 2px solid blue;
+      text-align: center;
+      font-weight: bold;
+    } 
+
+    /*Task 18*/
+     .parent{
+      width: 300px;
+      height: 200px;
+      background-color: lightblue;
+      position:relative;
+      top: 50px;
+      border: 2px solid blue;
+    }
+
+ 
+    .child{
+      width: 100px;
+      height: 100px;
+      background-color: coral;
+      position: absolute; 
+      top: 20px; 
+      border: 2px solid red;
+    }
+     header {
+      position: fixed; 
+      top: 0;       
+      width: 100%;     
+      background-color: #5192d3; 
+      color: white;  
+      padding: 15px;
+      text-align: center;
+      font-size: 24px;
+    }
+
+   
+    </style>
+</head>
+<body>
+<!-- Task 19 -->
+  <header>
+    Fixed Header Example
+  </header>
+
+
+    <!-- Task 4 -->
+    <h1>Color Using Name</h1>
+    <p class="name">
+        This is a long paragraph styled using a color name. It helps demonstrate
+        how readable and simple color names can be when applied in CSS.<br> Color
+        names are easy to understand and commonly used for basic styling in
+        small projects, practice examples, and learning purposes.
+    </p>
+
+    <h2>Color Using Hex Code</h2>
+    <p class="hex">
+        This long paragraph uses a hexadecimal color code. Hex colors are widely
+        used in professional web development because they offer a large range
+        of color combinations.<br> Designers often use hex values to maintain brand
+        consistency and precise color control across different web pages.
+    </p>
+
+    <h3>Color Using RGB</h3>
+    <p class="rgb">
+        This paragraph is styled using an RGB color value. RGB allows you to mix
+        red, green, and blue values to create millions of colors.<br> It is very
+        useful when working with dynamic designs, animations, and situations
+        where colors need to be adjusted programmatically.
+    </p> 
+
+
+           <!--Task 6 -->
+
+           <p class="text-para">
+             Readability plays a crucial role in how users consume and understand written content on the web.
+             When text is well spaced, properly aligned, and visually comfortable, readers can focus on the
+             message rather than struggling with eye strain or cluttered formatting. Adjusting the line height
+             allows each line of text to breathe, making long paragraphs easier to scan and follow. Letter
+             spacing subtly improves clarity by preventing characters from appearing cramped, especially on
+             screens of varying sizes. Text alignment, when used thoughtfully, can create a clean and organized
+             appearance that guides the reader naturally from one sentence to the next. By combining these
+             simple CSS properties, designers and developers can significantly enhance the overall reading
+              experience while maintaining a professional and polished layout.
+           </p>
+
+           <!--Task 7 & 8-->
+           <div class="box-1">
+            This div element has a margin applied on all sides. <br>
+            The space around the box separates it from other elements.
+           </div>
+
+           <!-- Task 9 -->
+            <div class="dashed-border">
+                This Box created using dashed border.
+            </div>
+            <div class="solid-border">
+                This Box created using solid border.
+            </div>
+            <!-- Task 10-->
+             <section class="background-img">
+               <p >
+                This section demonstrates how to use background color and background image together.
+                Using these properties, you can create visually appealing areas in your web page that
+                draw attention and improve design aesthetics.
+               </p>
+             </section>
+             <!-- Task 11 -->
+             <div class="main-container">   <!--main container for all elements/content--> 
+                <h1 class="heading">Clean and Commented CSS Example</h1>   <!---->
+                  <p>
+                     This example demonstrates how to write clean and readable HTML and CSS. Each CSS rule
+                     has a comment explaining its purpose, which helps maintain your code and makes it
+                     easier for others (and yourself) to understand. Comments are important for teamwork,
+                    learning, and keeping large projects organized.
+                  </p>
+             </div>
+
+               <div class="pixel-box">This box is created using px pixel unit</div>
+               <div class="percent-box">This box is created using % percent unit</div>
+               <div class="em-box">This box is created using em  unit</div>
+               <div class="rem-box">This box is created using rem unit</div>
+               <br>
+   <!--Task 13-->
+                <div class="box1"> 1</div>
+                <div class="box2"> 2</div>
+
+                <!--Task 14-->
+                <div class="box">This is a box showing margin, border, and padding.</div>
+                
+                <!-- Task 15 -->
+                 <h3>Task 15</h3>
+                  <div class="block">This is a div with display: block</div>
+                  <div class="block">Another block div</div>
+
+                 <span class="inline">This is a span with display: inline</span>
+                 <span class="inline">Another inline span</span>
+             <br>
+                 <!-- Task 16 -->
+                   <div class="inline-block-box">Box 1</div>
+                   <div class="inline-block-box">Box 2</div>
+                   <div class="inline-block-box">Box 3</div>
+                   <div class="inline-block-box">Box 4</div>
+                  
+                   <!--Task 17-->
+                    <h2>Task 17 - Relative Position</h2>
+
+                  <div class="relative-box">Relative Positioning!</div>
+
+                <!--Task 18-->
+                <div class="parent"> Parent Div
+                    <div class="child">  Child Div</div>
+               </div>
+
+     
+ 
+
+</body>
+</html>

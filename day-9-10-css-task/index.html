@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Basics</title>
+        <link rel="stylesheet" href="style.css" >
+         <style>
+        h3 {
+            color: darkblue;
+      
+            font-family: Arial, sans-serif;
+        }
+
+        .paragraph {
+            background-color: rgb(238, 229, 154);
+            border: 2px solid;
+            color: #d14558;
+            font-size: 16px;  
+            font-family: Verdana, sans-serif;
+             margin: 20px;
+        }
+    </style>
+    </head>
+    <body>
+        <!--Task 1-->
+        <h1 style="color: blue; font-size:35px; text-align: center;">Welcome to my Web Page</h1>
+
+                        <!--Task 5 font-size & family-->
+        <p style="color: green; font-size: 17px; font-family: Arial, Helvetica, sans-serif;  margin: 20px;">This Web Page is created to understand the basics concepts of HTML and CSS. </p>
+        
+        <h2 style="color: rgb(213, 83, 92);">Inline CSS</h2>
+
+        <p style="color: rgb(90, 2, 2); font-size: 16px; background-color: lightgoldenrodyellow; border: 2px solid;  margin: 20px;">
+            1. Inline CSS is written directly inside the HTML tags using the style attributes with property : value; pair.
+            <br> &nbsp;&nbsp;&nbsp; Ex.style="color: blue";
+        </p>
+        <!--Task 2-->
+         <h3> Internal CSS</h3>
+
+        <p class="paragraph">
+          1. This paragraph is styled using internal CSS written inside the
+           head section of the HTML document.
+           <br>
+           2. Internal CSS is useful when you want to apply styles to a single
+            webpage without using an external stylesheet.
+       </p>
+        <!-- Task 3 -->
+         <h4>External CSS</h4>
+         <p class="external-para">External CSS is a method of styling web pages where all CSS rules are written in a separate .css file and then linked to an HTML document.
+             <br>External CSS is commonly used in the real-world projects.
+         </p>
+    </body>
+</html>

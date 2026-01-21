@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+         h3 {
+      margin-top: 40px;
+    }
+    /* Task 21: Basic Flex Container */
+    .container {
+      display: flex;
+      border: 1px solid #333;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    .item {
+      background-color: #4c8eaf;
+      color: white;
+      padding: 20px;
+      margin: 5px;
+      text-align: center;
+    }
+     .col-container {
+      display: flex;
+      flex-direction:column;
+      border: 1px solid #333;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+          /* Task 23: Justify Content */
+     .justify-containet {
+      display: flex;
+      justify-content: space-around;
+      border: 1px solid #333;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+       /* Task 24: Align Items */
+      .align-item {
+      display: flex;
+      align-items: center;
+      height: 150px;
+      border: 1px solid #333;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+/*task 25 & 26*/
+    .wrap-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      border: 1px solid #333;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* Task 27: Flex Grow */
+    .wrap-container .item:nth-child(1) {
+      flex-grow: 1; /* first box grows */
+    }
+     
+     /* Task 28: Nav Bar */
+    nav ul {
+      display: flex;
+      list-style: none;
+      background-color: #333;
+    }
+    nav ul li {
+      color: white;
+      padding: 15px 20px;
+     
+    }
+
+    /* Task 29: Card Layout */
+    .cards {
+      display: flex; 
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .card {
+      background-color: #f2f2f2;
+      width: 300px;
+      height: 400px;
+      text-align: center;
+
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+   /* Task 30: Responsive Layout */
+    .flex-layout {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .flex-layout .box {
+     
+      height: 100px;
+      width: 200px;
+      background-color: #4CAF50;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+    } 
+    </style>
+</head>
+<body>
+    <h3>Task 21 – Basic Flex Container</h3>
+    <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+
+  <h3>Task 22 – Flex Direction Column</h3>
+  <div class="col-container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+
+   <h3>Task 23 – Justify Content</h3>
+  <div class="justify-containet">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+
+   <h3>Task 24 – Align Items</h3>
+  <div class="align-item">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+
+   <h3>Task  25,26 & 27 – Flex Wrap & Flex Grow</h3>
+  <div class="wrap-container">
+    <div class="item">1 (Grow) </div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+  </div>
+  
+   <h3>Task 28 – Navigation Bar</h3>
+  <nav>
+    <ul class="unordered-list">
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+ 
+  <h3>Task 29 – Card Layout</h3>
+  <div class="cards">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+    <div class="card">Card 4</div>
+  </div>
+
+  <h2>Task 30 – Responsive Layout</h2>
+  <div class="flex-layout">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+  </div>
+  
+</body>
+</html>

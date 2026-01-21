@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    h1, h2 {
+      margin-bottom: 10px;
+        align-items: center;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    /* header */
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+    
+    }
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      
+      display: flex;
+      gap: 20px;
+      justify-content: space-evenly;
+       cursor: pointer;  
+       
+    }
+
+  
+   nav:hover {
+      color: #4CAF50;
+    }
+
+    /* HERO n */
+    .hero {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      animation: slideDown 1.5s ease;
+    }
+
+    .hero p {
+      font-size: 18px;
+     
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* About */
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 20px;
+      align-items: center;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* Skills*/
+    .skills {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .skill {
+      background: white;
+      padding: 20px;
+      width: 150px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .skill:hover {
+      transform: scale(1.1);
+    }
+
+    /*  Projects*/
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .project-card {
+      background: white;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+
+    /* Contact */
+    .contact-form {
+      max-width: 400px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #388E3C;
+    }
+
+    /* footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #222;
+      color: white;
+    }
+
+    /* responsive  */
+    @media (max-width: 768px) {
+      .about {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- header -->
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+     
+    </nav>
+  </header>
+
+
+  <section class="hero" id="hero">
+    <h1>Hello, I'm a Web Developer</h1>
+    <p>I build modern and responsive websites</p>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2 style="text-align:center;">About Me</h2>
+    <div class="about">
+      <img src="https://via.placeholder.com/300" alt="Profile">
+      <p>
+        I am a passionate web developer skilled in HTML, CSS, and modern layout techniques like Flexbox and Grid.
+        I enjoy creating clean, responsive, and interactive user interfaces.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2 style="text-align:center;">Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">Flexbox</div>
+      <div class="skill">Grid</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2 style="text-align:center;">Projects</h2>
+    <div class="projects">
+      <div class="project-card">Project 1</div>
+      <div class="project-card">Project 2</div>
+      <div class="project-card">Project 3</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 style="text-align:center;">Contact Me</h2>
+    <div class="contact-form">
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button>Send Message</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 My Portfolio
+  </footer>
+
+</body>
+</html>
