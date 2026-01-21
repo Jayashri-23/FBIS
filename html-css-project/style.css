@@ -1,0 +1,364 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f1faee;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Header */
+header {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #457b9d;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background-color: #f1c40f;
+    color: #1d3557;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #e0b507;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.intro h2 {
+    color: #1d3557;
+    margin-bottom: 15px;
+}
+
+/* Card Layout for Packages & Testimonials */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    width: 280px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.card h3 {
+    color: #457b9d;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #333;
+    font-size: 15px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #a8dadc;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: #1d3557;
+    margin-bottom: 25px;
+}
+
+/* Footer */
+footer {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: #f1c40f;
+}
+
+
+/* DESTINATION PAGE */
+/* Destination Card Images */
+.card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Card text section already styled in .card */
+.card h3 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* PACKAGES page */
+/* Book Now Button inside Cards */
+.card .btn {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #f1c40f;
+    color: #1d3557;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card .btn:hover {
+    background-color: #e0b507;
+}
+
+
+/* About page */
+/* Team Card Images */
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Card Text */
+.card h3 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* About Page Headings */
+.content h2 {
+    color: #1d3557;         
+    font-size: 28px;          
+    margin-top: 30px;         
+    margin-bottom: 15px;  
+    text-align: center;    
+    text-transform: uppercase; 
+    letter-spacing: 1px;       
+}
+
+
+.content p {
+    color: #333;             
+    font-size: 16px;           
+    line-height: 1.8;          
+    text-align: justify;       
+    max-width: 800px;          /* Restrict width for better readability */
+    margin: 0 auto 20px auto;  /* Center paragraphs with spacing below */
+}
+
+/* Add subtle highlight for sections */
+.content h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f1c40f; /* Yellow underline to match theme */
+    margin: 10px auto;          /* Center the underline */
+    border-radius: 2px;
+}
+
+/* contact page */
+/* Contact Form Section */
+.form-section {
+    background-color: #f1faee;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-section h2 {
+    color: #1d3557;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form-section p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 15px;
+}
+
+.form-section label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-section input,
+.form-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.form-section button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f1c40f;
+    color: #1d3557;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-section button:hover {
+    background-color: #e0b507;
+}
+
+/* Office Info Section */
+.content h2 {
+    color: #1d3557;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 15px;
+    color: #333;
+    margin: 5px 0;
+}
+
+
+/* signp up */
+
+/* Form Section */
+.form-section {
+    background-color: #f1faee;
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.form-section h2 {
+    color: #1d3557;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-section p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-section label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.form-section button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f1c40f;
+    color: #1d3557;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-section button:hover {
+    background-color: #e0b507;
+}
+
+/* Link under form */
+.form-section a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-section a:hover {
+    text-decoration: underline;
+}
