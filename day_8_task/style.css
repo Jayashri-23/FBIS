@@ -1,0 +1,43 @@
+h1{
+    background-color: beige;
+    border: 5px;
+    border-radius: 30px;
+    color: brown;
+    font-size: 30px;
+    margin: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+.title{
+    font-family: italic;
+    background-color: rgb(222, 198, 167);
+    color: rgb(164, 99, 53);
+    border: 5px;
+    padding: 10px;
+}
+
+#mainparagraph{
+    color: blueviolet;
+    background-color: beige;
+    border: solid 2px;
+    font-size: 25px;
+}
+.btn{
+    color:rgb(34, 132, 132);
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px; 
+}
+.btn-1{
+    color: aqua;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px 0px 20px 0px;
+}
+.btn-2{
+    color: rgb(35, 79, 79);
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 45px 0px 45px 0px;
+}
