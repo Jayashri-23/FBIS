@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Data Meaning Task</title>
+</head>
+<body>
+
+  <h1> Information Form</h1>
+
+  <form action="form.php" method="post">
+    
+    <label for="username">Name:</label><br>      <!-- The Name/value entered from user will be sent as- name=UserName -->
+    <input type="text" id="username" maxlength="30" name="UserName"><br><br>
+
+   
+    <label for="email">Email:</label><br>              <!-- The email-id entered from user will be sent as email=UserEmail -->
+    <input type="email" id="email" maxlength="20" name="UserEmail"><br><br>
+
+    
+    <label for="age">Age:</label><br>  <!-- Age selected from the user will be sent as age=UserAge -->
+    <input type="number" id="age" name="UserAge"><br><br>
+
+    
+    <label for="message">Message:</label><br>   <!-- message written by user will be sent as the message=UserMessage -->
+    <textarea id="message" name="UserMessage"></textarea><br><br>
+
+
+    <button type="submit">Submit</button>       <!-- When Clicking submit buttn it sends all the above name-value pairs data to the server -->
+
+  </form>
+
+</body>
+</html>
