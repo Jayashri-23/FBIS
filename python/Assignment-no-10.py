@@ -120,51 +120,51 @@
 
 
 # 16. Write a program to iterate through a list of integers and print **only the first negative number, then stop.
-lst = [1,2,3,4,-5,6,7]
-for i in lst:
-    if i < 0:
-        print("**")
-        break
-    else:
-        print(i)
+# lst = [1,2,3,4,-5,6,7]
+# for i in lst:
+#     if i < 0:
+#         print("**")
+#         break
+#     else:
+#         print(i)
 
 # 17. Write a program using for-else to check if a number is present in a range from 1 to 50.
-num = int(input("Enter number: "))
-for m in range(1,50):
-    if m ==  num:
-        print("Number is present.") 
-        break
-else:
-    print("Nmuber is not present.")
+# num = int(input("Enter number: "))
+# for m in range(1,50):
+#     if m ==  num:
+#         print("Number is present.") 
+#         break
+# else:
+#     print("Nmuber is not present.")
 
 # 18. Write a program that skips all numbers divisible by 4, but prints all others from 1 to 40.
-for i in range(1,40):
-    if i % 4 == 0:
-         continue
-    print(i)
+# for i in range(1,40):
+#     if i % 4 == 0:
+#          continue
+#     print(i)
 
 # 19. Write a program that finds the “sum of numbers until the sum becomes greater than 100”, then stops.
-sum = 0
-while sum <= 100 :
-    num = int(input("Enter a number : "))
-    sum += num
-print("Sum is greater than 100.")
-print(sum)    
+# sum = 0
+# while sum <= 100 :
+#     num = int(input("Enter a number : "))
+#     sum += num
+# print("Sum is greater than 100.")
+# print(sum)    
 
 # 20. Write a program that prints numbers from 1 to 100, but replaces:
 
 #  multiples of 3 → "Fizz"
 #  multiples of 5 → "Buzz"
 #  multiples of both → "FizzBuzz"
-for i in range(1,101):
-    if i % 3 == 0 and i % 5 == 0:
-        print("FizzBuzz") 
-    elif  i % 3 == 0 :
-        print("Fizz")
-    elif i % 5 == 0 :
-        print("Buzz")
-    else:
-        print(i)
+# for i in range(1,101):
+#     if i % 3 == 0 and i % 5 == 0:
+#         print("FizzBuzz") 
+#     elif  i % 3 == 0 :
+#         print("Fizz")
+#     elif i % 5 == 0 :
+#         print("Buzz")
+#     else:
+#         print(i)
 
 # 21. Login Attempts System
     # A user gets 3 attempts to enter the correct password.
@@ -180,5 +180,67 @@ for i in range(1,4):
         print("Wrong Password ❌")
 else:
     print("Block Access 🚫")
+
+# 22. ATM Withdrawal
+    # Keep asking for withdrawal amount until the amount is less than or equal to balance.
+bal = 5000
+while True:
+    amt = int(input("Enter amount: "))
+    if amt <= bal :
+        print("Amount Withdrawl successful.")
+        break
+
+
+# 23. Student Attendance
+    # Iterate through a student list and stop checking attendance when "absent" is found.
+
+# attendance = ["present","present","present","absent","present"]
+for i in attendance:
+    if i == "absent":
+        break
+    print(i)
+    
+# 24. Online Exam System
+    # Skip a question if the student chooses "skip" and continue to the next question.
+question = ["Q.1","Q.2","Q.3","Skip","Q.5"]
+for n in question:
+    if n == "Skip":
+        continue    
+    print(n)
+
+# 25. Inventory Check
+    # Loop through product quantities and stop when *stock reaches zero*    
+product_quantity = [10,5,6,9,8,0,6,7]
+for i in product_quantity:
+    if i == 0:
+        break
+    print(i)
+
+# 26. OTP Verification
+    # Users have 5 chances to enter OTP. Stop immediately when OTP matches
+
+otp = "1234"
+for i in range(1,6):
+    user = input("Enter OTP : ")
+    if user == otp:
+        print("OTP Verified")
+        break
+
+# 27.  Website Visitor Counter
+    # Count visitors until count reaches 100, then stop the loop
+count = 0
+while count < 100:
+    count += 1
+    print(f"Visitor {count}")
+print("Limit Reached.")  
+
+
+# 28. Salary Processing
+    # Skip employees whose salary is 0, process others 
+
+# salary = [30000,33000,43000,10000,0,25000]
+# for i in salary:
+
+
     
 
