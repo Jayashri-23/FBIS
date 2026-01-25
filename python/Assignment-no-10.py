@@ -112,11 +112,73 @@
 #         print("Prime number.")
 
 # 15 . Write a program that prints a triangle pattern using nested for loops.
-row = 5
-for i in range(1 , row+1):
-    for j in range(i):
-        print("*" , end=" ")
-    print()   
+# row = 5
+# for i in range(1 , row+1):
+#     for j in range(i):
+#         print("*" , end=" ")
+#     print()   
 
 
 # 16. Write a program to iterate through a list of integers and print **only the first negative number, then stop.
+lst = [1,2,3,4,-5,6,7]
+for i in lst:
+    if i < 0:
+        print("**")
+        break
+    else:
+        print(i)
+
+# 17. Write a program using for-else to check if a number is present in a range from 1 to 50.
+num = int(input("Enter number: "))
+for m in range(1,50):
+    if m ==  num:
+        print("Number is present.") 
+        break
+else:
+    print("Nmuber is not present.")
+
+# 18. Write a program that skips all numbers divisible by 4, but prints all others from 1 to 40.
+for i in range(1,40):
+    if i % 4 == 0:
+         continue
+    print(i)
+
+# 19. Write a program that finds the “sum of numbers until the sum becomes greater than 100”, then stops.
+sum = 0
+while sum <= 100 :
+    num = int(input("Enter a number : "))
+    sum += num
+print("Sum is greater than 100.")
+print(sum)    
+
+# 20. Write a program that prints numbers from 1 to 100, but replaces:
+
+#  multiples of 3 → "Fizz"
+#  multiples of 5 → "Buzz"
+#  multiples of both → "FizzBuzz"
+for i in range(1,101):
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz") 
+    elif  i % 3 == 0 :
+        print("Fizz")
+    elif i % 5 == 0 :
+        print("Buzz")
+    else:
+        print(i)
+
+# 21. Login Attempts System
+    # A user gets 3 attempts to enter the correct password.
+    # Stop the loop if the password is correct, otherwise block access
+
+correct_pass = "admin@123"
+for i in range(1,4):
+    password = input("Enter password : ")
+    if password == correct_pass :
+        print("Login Successful ✅")
+        break
+    else:
+        print("Wrong Password ❌")
+else:
+    print("Block Access 🚫")
+    
+
