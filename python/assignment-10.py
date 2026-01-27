@@ -1,8 +1,7 @@
 # 1. Write a program to print all odd numbers from 1 to 50, but skip numbers divisible by 5 using continue.
 
 for i in range(1,51):
-    if i % 2 != 0:
-          
+    if i % 2 != 0: 
         if i % 5 == 0:
             continue
         print(i)
@@ -191,7 +190,7 @@ bal = 5000
 while True:
     amt = int(input("Enter amount: "))
     if amt <= bal :
-        print("Amount Withdrawl successful.")
+        print("Amount Withdrawal successful.")
         break
 
 
@@ -264,5 +263,4 @@ while lives > 0 :
     if move ==  "Wrong":
         lives -= 1 
     if lives == 0:
-      print("Gamr Over...")    
-
+      print("Game Over...")    
